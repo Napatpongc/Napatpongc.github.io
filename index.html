@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- Modal Popup -->
+<div id="experience-modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2 id="modal-title">Title Here</h2>
+    <p id="modal-body">Details here...</p>
+  </div>
+</div>
+<script>
+  function openModal(title, content) {
+    const modal = document.getElementById('modal');
+    const modalContent = document.getElementById('modal-content');
+    modalContent.innerHTML = `
+      <h2 style="margin-top: 0;">${title}</h2>
+      ${content}
+      <button class="close-btn" onclick="closeModal()">Close</button>
+    `;
+    modal.style.display = 'flex';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+</script>
+
+
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Napattarapong Chamchoy</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Napattarapong Chamchoy</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <!-- edit picture here -->
+        <img src="./assets/profile/profile-pic1.jpg" alt="Napatpong projile picture" class="profile-pic"> 
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Napattarapong</h1>
+        <p class="section__text__p2">Computer Engineering Student</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/profile/Portfolio.pdf')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <!-- <img src="./assets/linkedin.png" alt="My LinkedIn profile"
+          class="icon" onclick="location.href= 'https://www.youtube.com/watch?v=ldwlOzRvYOU&t=2411s'"> -->
+          <img src="./assets/github.png" alt="My github profile"
+          class="icon" onclick="location.href= 'https://github.com/Napatpongc'">
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <p class="title">About Me</p>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about/picture/picture-1.jpg" alt="Profile picture"
+          class="about-pic">
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <!-- <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon"
+              class="icon" 
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br>Frontend Development</p>
+            </div> -->
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon"
+              class="icon" 
+              />
+              <h3>Education</h3>
+              <p> 
+B.Eng. Computer Engineering <br> 
+Faculty of Engineering, Kasetsart University Sriracha Campus <br>  
+(Expected Graduation: 2026)
+</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p> <br>I am a computer engineering student who is interested in technology and programming.
+               I currently have basic programming skills and am constantly learning and improving myself.
+                I love coding and always find time to improve myself. 
+                I am a responsible person and am always eager to learn new things.</p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'">
+    
+    </section>
+    <section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+
+  <div class="experience-details-container">
+    <div class="about-containers">
+
+      <!-- Card 1 -->
+      <div class="details-container color-container project-card">
+        <div class="article-container">
+          <img src="./assets/experience/nso-pic1.jpg" alt="Experience icon" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">NSO DATA CAMP</h2>
+        <p class="project-desc">
+          Camp Project to promote knowledge
+           and skills in the use of statistical data <br>
+          July 2025
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="openModal(' DATA CAMP (Data Near You, driving the future with data)', `
+    <img src='./assets/experience/nso-pic1.jpg' alt='Detail image' style='width: 100%; border-radius: 10px; margin-bottom: 1rem;' />
+    To promote knowledge and skills in using statistical data, analyzing data for university students with the aim of effectively bringing the GD Catalog approach to enhance the flavor and skills in using statistical data and data efficiency to understand and easily instill the concept of research (Data-Driven Decision Making), helping to create a strong foundation for youth and university student councils/students, knowledge networks, data organizations and data concepts.
+Open for applications: June 4, 2025 to July 7, 2025
+Training date: July 18-20, 2025 (3 days, 2 days)
+Source: Centara Life Hotel, Staff Center and Convention Center, Chaeng Watthana, Bangkok
+  `)">
+            View More Info
+          </button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="details-container color-container project-card">
+  <div class="article-container">
+    <img src="./assets/experience/india-pic1.jpg" alt="Experience icon" class="project-img" />
+  </div>
+  <h2 class="experience-sub-title project-title">India Internships</h2>
+  <p class="project-desc">
+    Research Internship Summer in India at Vishwakarma University<br>
+    May 2025 - June 2025
+  </p>
+  <div class="btn-container">
+    <button class="btn btn-color-2 project-btn"
+  onclick="openModal('India Internship - Vishwakarma University', `
+    <img src='./assets/experience/india-pic1.jpg' alt='Internship Image' style='width: 100%; border-radius: 10px; margin-bottom: 1rem;' />
+    
+    <p style='font-weight: 500; margin-bottom: 0.5rem;'>
+      Students from the Computer Engineering and Informatics program are undertaking summer internships to gain experience before participating in cooperative education at Vishwakarma University, India
+    </p>
+    
+    <p style='font-weight: 400; margin-bottom: 0.5rem;'>
+      Prof. (Dr.) Siddharth Jabade, President of Vishwakarma University, India, visited 8 students from the Computer Engineering and Informatics program, Faculty of Engineering at Sriracha, who are undertaking summer internships. The purpose of the internship is to gain experience prior to participating in the cooperative education program in the second semester of the academic year 2025 (B.E. 2568), taking place from April 15 to June 15, 2025. The students are supervised by Asst. Prof. Dr. Prawit Chumchu, a lecturer in the Department of Computer Engineering, Faculty of Engineering at Sriracha, and Prof. (Dr.) Kailas Patil, an advisor from Vishwakarma University.
+    </p>
+    
+    <p>
+      <strong>Mr. Napattarapong Chamchoy</strong><br>
+      Project : Development of Image Restoration Tool
+    </p>
+  `)">
+  View More Info
+</button>
+
+  </div>
+</div>
+
+<!-- end Card -->
+
+  <!-- Card 3 -->
+      <div class="details-container color-container project-card">
+  <div class="article-container">
+    <img src="./assets/experience/relation.png" alt="Experience icon" class="project-img" />
+  </div>
+  <h2 class="experience-sub-title project-title">Engineering Sports Relations </h2>
+  <p class="project-desc">
+    supervisor of the stand cheer maintenance design department.<br>
+    Nov 2023 - Dec 2023
+  </p>
+  <!-- <div class="btn-container">
+    <button class="btn btn-color-2 project-btn"
+  onclick="openModal('IT Support - Vishwakarma University', `
+    <img src='./assets/experience/india-pic1.jpg' alt='Internship Image' style='width: 100%; border-radius: 10px; margin-bottom: 1rem;' />
+    
+    <p style='font-weight: 500; margin-bottom: 0.5rem;'>
+      Students from the Computer Engineering and Informatics program are undertaking summer internships to gain experience before participating in cooperative education at Vishwakarma University, India
+    </p>
+    
+    <p style='font-weight: 400; margin-bottom: 0.5rem;'>
+      Prof. (Dr.) Siddharth Jabade, President of Vishwakarma University, India, visited 8 students from the Computer Engineering and Informatics program, Faculty of Engineering at Sriracha, who are undertaking summer internships. The purpose of the internship is to gain experience prior to participating in the cooperative education program in the second semester of the academic year 2025 (B.E. 2568), taking place from April 15 to June 15, 2025. The students are supervised by Asst. Prof. Dr. Prawit Chumchu, a lecturer in the Department of Computer Engineering, Faculty of Engineering at Sriracha, and Prof. (Dr.) Kailas Patil, an advisor from Vishwakarma University.
+    </p>
+    
+    <p>
+      <strong>Mr. Napattarapong Chamchoy</strong><br>
+      Project : Development of Image Restoration Tool
+    </p>
+  `)">
+  View More Info
+</button>
+
+  </div> -->
+</div>
+
+<!-- end Card -->
+
+  <!-- Card 4 -->
+      <div class="details-container color-container project-card">
+  <div class="article-container">
+    <img src="./assets/experience/cyber.png" alt="Experience icon" class="project-img" />
+  </div>
+  <h2 class="experience-sub-title project-title">Promote knowledge for competition Cybersecurity</h2>
+  <p class="project-desc">
+    Training in cyber defense skills and knowledge of cyber vulnerabilities and threats<br>
+    Sep 2023
+  </p>
+  <!-- <div class="btn-container">
+    <button class="btn btn-color-2 project-btn"
+  onclick="openModal('IT Support - Vishwakarma University', `
+    <img src='./assets/experience/india-pic1.jpg' alt='Internship Image' style='width: 100%; border-radius: 10px; margin-bottom: 1rem;' />
+    
+    <p style='font-weight: 500; margin-bottom: 0.5rem;'>
+      Students from the Computer Engineering and Informatics program are undertaking summer internships to gain experience before participating in cooperative education at Vishwakarma University, India
+    </p>
+    
+    <p style='font-weight: 400; margin-bottom: 0.5rem;'>
+      Prof. (Dr.) Siddharth Jabade, President of Vishwakarma University, India, visited 8 students from the Computer Engineering and Informatics program, Faculty of Engineering at Sriracha, who are undertaking summer internships. The purpose of the internship is to gain experience prior to participating in the cooperative education program in the second semester of the academic year 2025 (B.E. 2568), taking place from April 15 to June 15, 2025. The students are supervised by Asst. Prof. Dr. Prawit Chumchu, a lecturer in the Department of Computer Engineering, Faculty of Engineering at Sriracha, and Prof. (Dr.) Kailas Patil, an advisor from Vishwakarma University.
+    </p>
+    
+    <p>
+      <strong>Mr. Napattarapong Chamchoy</strong><br>
+      Project : Development of Image Restoration Tool
+    </p>
+  `)">
+  View More Info
+</button>
+
+  </div> -->
+</div>
+
+<!-- end Card -->
+
+  <!-- Card 5 -->
+      <div class="details-container color-container project-card">
+  <div class="article-container">
+    <img src="./assets/experience/physic.png" alt="Experience icon" class="project-img" />
+  </div>
+  <h2 class="experience-sub-title project-title">Project Physics Analysis</h2>
+  <p class="project-desc">
+    Learn physics problem solving skills in the topic of Physics Mechanics. by university project<br>
+    May 2023
+  </p>
+  <!-- <div class="btn-container">
+    <button class="btn btn-color-2 project-btn"
+  onclick="openModal('IT Support - Vishwakarma University', `
+    <img src='./assets/experience/india-pic1.jpg' alt='Internship Image' style='width: 100%; border-radius: 10px; margin-bottom: 1rem;' />
+    
+    <p style='font-weight: 500; margin-bottom: 0.5rem;'>
+      Students from the Computer Engineering and Informatics program are undertaking summer internships to gain experience before participating in cooperative education at Vishwakarma University, India
+    </p>
+    
+    <p style='font-weight: 400; margin-bottom: 0.5rem;'>
+      Prof. (Dr.) Siddharth Jabade, President of Vishwakarma University, India, visited 8 students from the Computer Engineering and Informatics program, Faculty of Engineering at Sriracha, who are undertaking summer internships. The purpose of the internship is to gain experience prior to participating in the cooperative education program in the second semester of the academic year 2025 (B.E. 2568), taking place from April 15 to June 15, 2025. The students are supervised by Asst. Prof. Dr. Prawit Chumchu, a lecturer in the Department of Computer Engineering, Faculty of Engineering at Sriracha, and Prof. (Dr.) Kailas Patil, an advisor from Vishwakarma University.
+    </p>
+    
+    <p>
+      <strong>Mr. Napattarapong Chamchoy</strong><br>
+      Project : Development of Image Restoration Tool
+    </p>
+  `)">
+  View More Info
+</button>
+
+  </div> -->
+</div>
+
+<!-- end Card -->
+
+<div class="details-container color-container project-card">
+  <h2 class="experience-sub-title project-title">Tech Skills</h2>
+  <div class="skill-grid">
+    <div class="skill-item">
+      <h3>HTML, CSS, JS</h3>
+      <p>website</p>
+    </div>
+    <div class="skill-item">
+      <h3>Python, C, C++ ,Java</h3>
+      <p>Programming Languages</p>
+    </div>
+    <div class="skill-item">
+      <h3>Git, Figma, VS Code, Arduino,
+React</h3>
+      <p>tools</p>
+    </div>
+    <div class="skill-item">
+      <h3>MySQL,Firebase</h3>
+      <p>database</p>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'">
+</section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+       
+        
+        <div class="details-container color-container project-card">
+  <div class="article-container">
+    <img src="./assets/projects/image-restoration/profile1.png" alt="Project 3" 
+      class="project-img" />
+  </div>
+  <h2 class="experence-sub-title project-title">Image Restoration tool</h2>
+  <p class="project-desc">
+    A tool for restoring deteriorated images using three appropriate machine learning models.
+  </p>
+  <div class="btn-container">
+    <!-- View More Info ปุ่มแรก -->
+    <button class="btn btn-color-2 project-btn"
+  onclick="openModal('Image Restoration Project', `
+    <img src='./assets/projects/image-restoration/profile1.png' alt='Image Restoration' style='width: 100%; border-radius: 10px; margin-bottom: 1rem;' />
+    
+    <ul style='font-weight: 500; padding-left: 1.2rem; margin-bottom: 1.5rem;'>
+      <li>This research presents a complete image restoration system integrated into a Flask-based web application.</li>
+      <li>The system consists of three main modules:</li>
+      <ul style='padding-left: 1.5rem; margin-top: 0.5rem;'>
+        <li><strong>DEM</strong> (Degradation Evaluation Module): Automatically identifies image degradation types such as blur, noise, and low resolution.</li>
+        <li><strong>ARF</strong> (Adaptive Restoration Filtering): Applies advanced models—DeblurGANv2 for deblurring, FFDNet for denoising, and EDSR for super-resolution.</li>
+        <li><strong>FEM</strong> (Final Enhancement Module): Enhances color accuracy using the DWB model.</li>
+      </ul>
+      <li>Unlike traditional methods that require manual analysis, this system provides an automated and efficient solution.</li>
+      <li>Users can upload images, have them restored automatically, and download the improved results directly through the platform.</li>
+    </ul>
+
+    <h3 style='margin-top: 2rem;'>Diagram</h3>
+    <img src='./assets/projects/image-restoration/picture/diagram.png' alt='System Diagram' style='width: 35%; border-radius: 10px; margin-bottom: 1.5rem;' />
+
+    <h3 style='margin-top: 2rem;'>Results</h3>
+    <img src='./assets/projects/image-restoration/picture/result.jpg' alt='Restoration Result' style='width: 100%; border-radius: 10px;' />
+  `)">
+  View More 
+</button>
+    <!-- Github -->
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/image-restoration'">Github</button>
+
+    <!-- Live Demo -->
+    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+  </div>
+</div>
+
+
+<!-- card 2 -->
+<div class="details-container color-container project-card">
+  <div class="article-container">
+    <img src="./assets/projects/mustode-bcar/picture/profile.png " alt="Project 3" 
+      class="project-img" />
+  </div>
+  <!-- name Project -->
+  <h2 class="experence-sub-title project-title">Application Vehicle rental</h2>
+  <p class="project-desc">
+    An app that allows vehicle rentals uses map data to determine the user's location.
+  </p>
+  <div class="btn-container">
+    <!-- View More Info ปุ่มแรก -->
+    <button class="btn btn-color-2 project-btn"
+  onclick="openModal('Image Restoration Project', `
+    <img src='./assets/projects/mustode-bcar/picture/picture-real.jpg' alt='Vehicle rental' style='width: 40%; display: block; margin: 0 auto; border-radius: 10px; margin-bottom: 1rem;' />
+
+    <p style='font-weight: 500; text-align: center; margin-bottom: 2rem;'>
+      An app that allows you to rent a vehicle and rent out your own vehicle at the same time. It has user accounts in a database, real-world financial transactions, and uses location.
+    </p>
+  `)">
+  View More 
+</button>
+    <!-- Github -->
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/Mustode_B_car'">Github</button>
+
+    <!-- Live Demo -->
+    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+  </div>
+</div>
+<!-- end Card -->
+
+<!-- card 3 -->
+<div class="details-container color-container project-card">
+  <div class="article-container">
+    <img src="./assets/projects/iot-cannabit/picture/picture.jpg " alt="Project 3" 
+      class="project-img" />
+  </div>
+  <!-- name Project -->
+  <h2 class="experence-sub-title project-title">Tree care system</h2>
+  <p class="project-desc">
+   Project about creating an intelligent tree planting and care system
+  </p>
+  <div class="btn-container">
+    <!-- View More Info ปุ่มแรก -->
+    <!-- <button class="btn btn-color-2 project-btn"
+  onclick="openModal('Image Restoration Project', `
+    <img src='./assets/projects/mustode-bcar/picture/picture-real.jpg' alt='Vehicle rental' style='width: 40%; display: block; margin: 0 auto; border-radius: 10px; margin-bottom: 1rem;' />
+
+    <p style='font-weight: 500; text-align: center; margin-bottom: 2rem;'>
+      An app that allows you to rent a vehicle and rent out your own vehicle at the same time. It has user accounts in a database, real-world financial transactions, and uses location.
+    </p>
+  `)">
+  View More 
+</button> -->
+    <!-- Github -->
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/tree-care-system'">Github</button>
+
+    <!-- Live Demo -->
+    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+  </div>
+</div>
+<!-- end Card -->
+
+<!-- card 4 -->
+<div class="details-container color-container project-card">
+  <div class="article-container">
+    <img src="./assets/projects/cancer/picture/picture.png " alt="Project 3" 
+      class="project-img" />
+  </div>
+  <!-- name Project -->
+  <h2 class="experence-sub-title project-title">Cancer classification</h2>
+  <p class="project-desc">
+    This project is about analyzing data on characteristics of cancer cell types and performing visualizations.
+  </p>
+  <div class="btn-container">
+    <!-- View More Info ปุ่มแรก -->
+    <!-- <button class="btn btn-color-2 project-btn"
+  onclick="openModal('Image Restoration Project', `
+    <img src='./assets/projects/mustode-bcar/picture/picture-real.jpg' alt='Vehicle rental' style='width: 40%; display: block; margin: 0 auto; border-radius: 10px; margin-bottom: 1rem;' />
+
+    <p style='font-weight: 500; text-align: center; margin-bottom: 2rem;'>
+      An app that allows you to rent a vehicle and rent out your own vehicle at the same time. It has user accounts in a database, real-world financial transactions, and uses location.
+    </p>
+  `)">
+  View More 
+</button> -->
+    <!-- Github -->
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/Cancer-Classification'">Github</button>
+
+    <!-- Live Demo -->
+    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+  </div>
+</div>
+<!-- end Card -->
+
+
+<!-- card 5 -->
+<div class="details-container color-container project-card">
+  <div class="article-container">
+    <img src="./assets/projects/human-detection/picture/picture.jpg " alt="Project 3" 
+      class="project-img" />
+  </div>
+  <!-- name Project -->
+  <h2 class="experence-sub-title project-title">Human detection</h2>
+  <p class="project-desc">
+    The device detects humans using a camera and then uses AI to analyze and send alerts to mobile phones.
+  </p>
+  <div class="btn-container">
+    <!-- View More Info ปุ่มแรก -->
+    <!-- <button class="btn btn-color-2 project-btn"
+  onclick="openModal('Image Restoration Project', `
+    <img src='./assets/projects/mustode-bcar/picture/picture-real.jpg' alt='Vehicle rental' style='width: 40%; display: block; margin: 0 auto; border-radius: 10px; margin-bottom: 1rem;' />
+
+    <p style='font-weight: 500; text-align: center; margin-bottom: 2rem;'>
+      An app that allows you to rent a vehicle and rent out your own vehicle at the same time. It has user accounts in a database, real-world financial transactions, and uses location.
+    </p>
+  `)">
+  View More 
+</button> -->
+    <!-- Github -->
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/human-detection'">Github</button>
+
+    <!-- Live Demo -->
+    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+  </div>
+</div>
+<!-- end Card -->
+
+
+<!-- card 6 -->
+<div class="details-container color-container project-card">
+  <div class="article-container">
+    <img src="./assets/projects/measure-execution-time/picture/picture.png" alt="Project 3" 
+      class="project-img" />
+  </div>
+  <!-- name Project -->
+  <h2 class="experence-sub-title project-title">measure CPU executiontime  </h2>
+  <p class="project-desc">
+    GUI window that tests and measures the performance of your computer and compares it with other computer.
+  </p>
+  <div class="btn-container">
+    <!-- View More Info ปุ่มแรก -->
+    <!-- <button class="btn btn-color-2 project-btn"
+  onclick="openModal('Image Restoration Project', `
+    <img src='./assets/projects/mustode-bcar/picture/picture-real.jpg' alt='Vehicle rental' style='width: 40%; display: block; margin: 0 auto; border-radius: 10px; margin-bottom: 1rem;' />
+
+    <p style='font-weight: 500; text-align: center; margin-bottom: 2rem;'>
+      An app that allows you to rent a vehicle and rent out your own vehicle at the same time. It has user accounts in a database, real-world financial transactions, and uses location.
+    </p>
+  `)">
+  View More 
+</button> -->
+    <!-- Github -->
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/measure_execution_time'">Github</button>
+
+    <!-- Live Demo -->
+    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+  </div>
+</div>
+<!-- end Card -->
+
+
+<!-- card 7 -->
+<div class="details-container color-container project-card">
+  <div class="article-container">
+    <img src="./assets/projects/caculate-geometry&math-practice/picture/picture.png" alt="Project 3" 
+      class="project-img" />
+  </div>
+  <!-- name Project -->
+  <h2 class="experence-sub-title project-title">Calculate geometry & math practice</h2>
+  <p class="project-desc">
+    GUI window calculates the area or volume of geometric shapes and can practice math.
+  </p>
+  <div class="btn-container">
+    <!-- View More Info ปุ่มแรก -->
+    <!-- <button class="btn btn-color-2 project-btn"
+  onclick="openModal('Image Restoration Project', `
+    <img src='./assets/projects/mustode-bcar/picture/picture-real.jpg' alt='Vehicle rental' style='width: 40%; display: block; margin: 0 auto; border-radius: 10px; margin-bottom: 1rem;' />
+
+    <p style='font-weight: 500; text-align: center; margin-bottom: 2rem;'>
+      An app that allows you to rent a vehicle and rent out your own vehicle at the same time. It has user accounts in a database, real-world financial transactions, and uses location.
+    </p>
+  `)">
+  View More 
+</button> -->
+    <!-- Github -->
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/project-calculate-geometry-and-math-'">Github</button>
+
+    <!-- Live Demo -->
+    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+  </div>
+</div>
+<!-- end Card -->
+
+        
+        
+        
+        
+      </div>
+      </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'">
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:napatpongct@gmail.com">napatpongct@gmail.com</a></p>
+        </div>
+        
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+      </nav>
+      <p>2025 Napattarapong Chamchoy | Portfolio Website </p>   
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<script>
+  function openModal(title, bodyHTML) {
+    document.getElementById("modal-title").textContent = title;
+    document.getElementById("modal-body").innerHTML = bodyHTML;
+    document.getElementById("experience-modal").classList.remove("hidden");
+  }
+
+  function closeModal() {
+    document.getElementById("experience-modal").classList.add("hidden");
+  }
+
+  // (Optional) ปิด modal เมื่อกด Escape
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      closeModal();
+    }
+  });
+</script>
+
+<!-- Modal Template -->
+<div id="modal" class="modal-overlay" style="display: none;">
+  <div class="modal-content" id="modal-content">
+    <!-- Content from openModal() will be injected here -->
+  </div>
+</div>
+
+
