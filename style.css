@@ -577,56 +577,172 @@ footer p{
 
 
 @media screen and (max-width: 768px) {
+  /* GLOBAL */
+  html {
+    font-size: 14px; /* ลดขนาดฟอนต์ทั้งหมดให้พอดีจอ */
+  }
+
+  section {
+    margin: 0 1.5rem;
+    padding-top: 2rem;
+  }
+
+  /* PROFILE SECTION */
   #profile {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    gap: 2rem;
     height: auto;
-    padding: 2rem 1rem;
+    padding: 1rem 0;
   }
 
   .section__pic-container {
-    width: 70vw;
-    height: 70vw;
+    width: 200px;
+    height: 200px;
   }
 
   .profile-pic {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
   }
 
   .section__text {
     text-align: center;
   }
-   .section-container {
+
+  .section__text .title {
+    font-size: 2rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    padding: 0.6rem;
+    width: 6rem;
+    font-size: 0.9rem;
+  }
+
+  /* ABOUT SECTION */
+  #about {
+    padding: 2rem 1rem;
+  }
+
+  .section-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
   .about-pic {
-    width: 70vw;
+    width: 60vw;
     height: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1.5rem;
   }
 
   .about-details-container {
+    flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
   .about-containers {
-    justify-content: center;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
   }
 
   .details-container {
     width: 90%;
+    margin-bottom: 1rem;
+  }
+
+  .text-container {
+    width: 90%;
+    max-width: 500px;
   }
 
   .arrow {
     display: none;
   }
+
+  /* EXPERIENCE SECTION */
+  .experience-details-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 95%;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  /* CONTACT SECTION */
+  #contact {
+    padding: 2rem 1rem;
+    height: auto;
+  }
+
+  .contact-info-upper-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  /* FOOTER */
+  footer {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+
+  /* MODAL (optional: for better mobile experience) */
+  .modal-content {
+    padding: 1rem;
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+
+  .modal-content .close-btn {
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  /* SKILL GRID */
+  .skill-grid {
+    grid-template-columns: 1fr; /* 1 column on small screen */
+  }
+
+  .skill-item h3 {
+    font-size: 1rem;
+  }
+
+  .skill-item p {
+    font-size: 0.9rem;
+  }
 }
+
+
 
 
 
