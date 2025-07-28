@@ -407,16 +407,75 @@ Faculty of Engineering, Kasetsart University Sriracha Campus <br>
   </p>
   <div class="btn-container">
     <!-- View More Info ปุ่มแรก -->
-    <button class="btn btn-color-2 project-btn"
-  onclick="openModal('Human detection', `
-    <img src='./assets/projects/mustode-bcar/picture/picture-real.jpg' alt='Human detection' style='width: 40%; display: block; margin: 0 auto; border-radius: 10px; margin-bottom: 1rem;' />
+        <button class="btn btn-color-2 project-btn"
+    onclick="openModal('Human Detection Project', `
+      <!-- Main device image -->
+      <img
+        src='./assets/projects/human-detection/picture/device-overview.jpg'
+        alt='Device Overview'
+        style='display: block; width: 80%; max-width: 400px; margin: 0 auto 1rem; border-radius: 10px;'
+      />
 
-    <p style='font-weight: 500; text-align: center; margin-bottom: 2rem;'>
-      An app that allows you to rent a vehicle and rent out your own vehicle at the same time. It has user accounts in a database, real-world financial transactions, and uses location.
-    </p>
-  `)">
-  View More 
-</button>
+      <!-- Project Overview -->
+      <h3 style='margin-top:0; margin-bottom:0.5rem;'>Project Overview</h3>
+      <p style='margin-bottom:1rem;'>
+        This project presents a device that can detect human presence and send
+        real‑time alerts via LINE. It works both day and night: at night, when
+        a human is detected by the AI model, the system automatically turns on
+        a 10 W light, captures an image, and pushes a notification through LINE immediately.
+      </p>
+
+      <!-- Development Process -->
+      <h3 style='margin-top:1rem; margin-bottom:0.5rem;'>Development Process</h3>
+      <ul style='margin-bottom:1.5rem; padding-left:1.2rem;'>
+        <li>PCB design and layout</li>
+        <li>Procurement and soldering of electronic components</li>
+        <li>Wiring tests and hardware integration</li>
+        <li>Firmware development using MQTT protocol</li>
+        <li>AI‑based human detection with YOLO on images (Cira Core framework)</li>
+        <li>MCU: ESP32 &amp; ESP32‑CAM</li>
+      </ul>
+
+      <!-- Key Visuals -->
+      <h3 style='margin-top:1rem; margin-bottom:0.5rem;'>Key Visuals</h3>
+      <div style='display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; margin-bottom:1rem;'>
+        <!-- Image 1 -->
+        <div style='flex:1; min-width:200px; max-width:250px;'>
+          <img
+            src='./assets/projects/human-detection/picture/device-internals.jpg'
+            alt='Internal device view'
+            style='width:100%; border-radius:10px; margin-bottom:0.5rem;'
+          />
+          <p style='text-align:center; font-size:0.9rem; margin:0;'>
+            Internal view of the ESP32‑CAM module and PCB showing sensor placement and wiring.
+          </p>
+        </div>
+        <!-- Image 2 -->
+        <div style='flex:1; min-width:200px; max-width:250px;'>
+          <img
+            src='./assets/projects/human-detection/picture/line-notification.jpg'
+            alt='LINE notification screenshot'
+            style='width:100%; border-radius:10px; margin-bottom:0.5rem;'
+          />
+          <p style='text-align:center; font-size:0.9rem; margin:0;'>
+            Screenshot of the LINE alert received when the device detects a human.
+          </p>
+        </div>
+        <!-- Image 3 -->
+        <div style='flex:1; min-width:200px; max-width:250px;'>
+          <img
+            src='./assets/projects/human-detection/picture/ai-detection-result.jpg'
+            alt='AI detection result'
+            style='width:100%; border-radius:10px; margin-bottom:0.5rem;'
+          />
+          <p style='text-align:center; font-size:0.9rem; margin:0;'>
+            Output from the YOLO AI model with Cira Core framework.
+          </p>
+        </div>
+      </div>
+    `)">
+    View More
+  </button>
     <!-- Github -->
     <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/human-detection'">Github</button>
 
