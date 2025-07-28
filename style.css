@@ -172,6 +172,7 @@ section {
     height:400px;
     width:400px;
     margin: auto 0;
+    
 }
 
 .section__text{
@@ -208,12 +209,10 @@ section {
 }
 
 .profile-pic {
-  /* ทำให้ขอบโค้งเป็นวงกลม */
   border-radius: 50%;
-  /* ครอบรูปให้พอดีขนาด ไม่ผิดเพี้ยน */
   object-fit: cover;
-  /* ตรวจสอบการแสดงผล ให้รองรับทุกกรณี */
   display: block;
+  border: 3px solid black; /* ✅ Add this line */
 }
 
 
@@ -553,6 +552,8 @@ footer p{
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-top: 1rem;
+  width: 100%;            /* ✅ ให้เต็มเฉพาะภายใน card */
+  box-sizing: border-box; /* ✅ ป้องกันล้นขอบ */
 }
 
 .skill-item {
@@ -562,6 +563,7 @@ footer p{
   text-align: center;
   border: 1px solid #e0e0e0;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+  word-break: break-word;        /* ✅ บังคับตัดคำถ้ายาว */
 }
 
 .skill-item h3 {

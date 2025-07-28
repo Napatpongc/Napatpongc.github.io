@@ -122,6 +122,383 @@ Faculty of Engineering, Kasetsart University Sriracha Campus <br>
       <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'">
     
     </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+       
+        
+        <div class="details-container color-container project-card">
+  <div class="article-container">
+    <img src="./assets/projects/image-restoration/profile1.png" alt="Project 3" 
+      class="project-img" />
+  </div>
+  <h2 class="experence-sub-title project-title">Image Restoration tool</h2>
+  <p class="project-desc">
+    A tool for restoring deteriorated images using three appropriate machine learning models.
+  </p>
+  <div class="btn-container">
+    <!-- View More Info ปุ่มแรก -->
+    <button class="btn btn-color-2 project-btn"
+  onclick="openModal('Image Restoration Project', `
+    <img src='./assets/projects/image-restoration/profile1.png' alt='Image Restoration' style='width: 100%; border-radius: 10px; margin-bottom: 1rem;' />
+    
+    <ul style='font-weight: 500; padding-left: 1.2rem; margin-bottom: 1.5rem;'>
+      <li>This research presents a complete image restoration system integrated into a Flask-based web application.</li>
+      <li>The system consists of three main modules:</li>
+      <ul style='padding-left: 1.5rem; margin-top: 0.5rem;'>
+        <li><strong>DEM</strong> (Degradation Evaluation Module): Automatically identifies image degradation types such as blur, noise, and low resolution.</li>
+        <li><strong>ARF</strong> (Adaptive Restoration Filtering): Applies advanced models—DeblurGANv2 for deblurring, FFDNet for denoising, and EDSR for super-resolution.</li>
+        <li><strong>FEM</strong> (Final Enhancement Module): Enhances color accuracy using the DWB model.</li>
+      </ul>
+      <li>Unlike traditional methods that require manual analysis, this system provides an automated and efficient solution.</li>
+      <li>Users can upload images, have them restored automatically, and download the improved results directly through the platform.</li>
+    </ul>
+
+    <h3 style='margin-top: 2rem;'>Diagram</h3>
+    <img src='./assets/projects/image-restoration/picture/diagram.png' alt='System Diagram' style='width: 35%; border-radius: 10px; margin-bottom: 1.5rem;' />
+
+    <h3 style='margin-top: 2rem;'>Results</h3>
+    <img src='./assets/projects/image-restoration/picture/result.jpg' alt='Restoration Result' style='width: 100%; border-radius: 10px;' />
+  `)">
+  View More 
+</button>
+    <!-- Github -->
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/image-restoration'">Github</button>
+
+    <!-- Live Demo -->
+    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+  </div>
+</div>
+
+
+<!-- card 2 -->
+<div class="details-container color-container project-card">
+  <div class="article-container">
+    <div style="
+        width: 100%;
+        height: 180px;        /* ความสูงที่ต้องการ */
+        overflow: hidden;
+        margin-bottom: 1rem;
+      ">
+      <img
+        src="./assets/projects/mustode-bcar/picture/profile.png"
+        alt="Project 3"
+        style="
+          width: 100%;
+          height: 100%;
+          object-fit: contain;  /* แสดงทั้งภาพ ไม่ crop */
+        "
+      />
+    </div>
+  </div>
+  <!-- name Project -->
+  <h2 class="experence-sub-title project-title">Application Vehicle rental</h2>
+  <p class="project-desc">
+    An app that allows vehicle rentals uses map data to determine the user's location.
+  </p>
+  <div class="btn-container">
+    <!-- View More Info ปุ่มแรก -->
+    <button class="btn btn-color-2 project-btn"
+  onclick="openModal('Application Vehicle Rental', `
+    <!-- Main image (50% width) -->
+    <img
+      src='./assets/projects/mustode-bcar/picture/picture-real.jpg'
+      alt='Vehicle Rental Main'
+      style='width:50%; display:block; margin:0 auto 1rem; border-radius:10px;'
+    />
+
+    <!-- Project Overview -->
+    <h3 style='margin-top:1rem; margin-bottom:0.5rem;'>Project Overview</h3>
+    <p style='margin-bottom:1rem;'>
+      An application that lets users <strong>rent vehicles</strong> from others or
+      <strong>list their own vehicles</strong> for rent.
+    </p>
+
+    <!-- Key Features -->
+    <h3 style='margin-top:1rem; margin-bottom:0.5rem;'>Key Features</h3>
+    <ul style='margin-bottom:1rem; padding-left:1.2rem; line-height:1.4;'>
+      <li><strong>Location-based Pick‑up:</strong> Select a pick‑up spot based on your current location.</li>
+      <li><strong>Flexible Booking:</strong> Reserve vehicles for specific dates and times.</li>
+      <li><strong>Secure Payments:</strong> Real‑time transaction processing with full verification.</li>
+      <li><strong>Account Security:</strong> Passwords encrypted end-to-end.</li>
+    </ul>
+
+    <!-- Illustrations -->
+    <h3 style='margin-top:1rem; margin-bottom:0.5rem;'>Illustrations</h3>
+    <div style='display:flex; flex-wrap:wrap; justify-content:center; gap:1rem;'>
+      <!-- Container for each tall image -->
+      <div style='width:30%; max-height:300px; overflow:hidden; border-radius:10px;'>
+        <img
+          src='./assets/projects/mustode-bcar/picture/pic3.png'
+          alt='Pick‑up Location Screen'
+          style='width:100%; height:100%; object-fit:contain;'
+        />
+      </div>
+      <div style='width:30%; max-height:300px; overflow:hidden; border-radius:10px;'>
+        <img
+          src='./assets/projects/mustode-bcar/picture/pic4.png'
+          alt='Payment Screen'
+          style='width:100%; height:100%; object-fit:contain;'
+        />
+      </div>
+    </div>
+  `);">
+  View More
+</button>
+
+
+
+    <!-- Github -->
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/Mustode_B_car'">Github</button>
+
+    <!-- Live Demo -->
+    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+  </div>
+</div>
+<!-- end Card -->
+
+<!-- card 3 -->
+<div class="details-container color-container project-card">
+  <div class="article-container">
+    <img src="./assets/projects/iot-cannabit/picture/picture.jpg " alt="Project 3" 
+      class="project-img" />
+  </div>
+  <!-- name Project -->
+  <h2 class="experence-sub-title project-title">Smart Plant Care Project</h2>
+  <p class="project-desc">
+  Smart IOT project takes care of plant growth. It uses cameras to predict leaf diseases and can provide fertilizers, medicines and water via wireless network.
+  </p>
+  <div class="btn-container">
+    <!-- View More Info ปุ่มแรก -->
+    <button class="btn btn-color-2 project-btn"
+  onclick="openModal('Smart Plant Care Project', `
+    <!-- Main image (50% width) -->
+    <img
+      src='./assets/projects/iot-cannabit/picture/picture.jpg'
+      alt='Smart Plant Care Main'
+      style='width:50%; display:block; margin:0 auto 1rem; border-radius:10px;'
+    />
+
+    <!-- Project Overview -->
+    <h3 style='margin-top:1rem; margin-bottom:0.5rem;'>Project Overview</h3>
+    <p style='margin-bottom:1rem;'>
+      An intelligent IoT-based system designed to monitor and care for plants,
+      ensuring healthy growth through automated environmental sensing and action.
+    </p>
+
+    <!-- Key Features -->
+    <h3 style='margin-top:1rem; margin-bottom:0.5rem;'>Key Features</h3>
+    <ul style='margin-bottom:1rem; padding-left:1.2rem; line-height:1.5;'>
+      <li>Detect plant leaf diseases using a camera and machine learning model</li>
+      <li>Display real-time sensor data on a dashboard with port forwarding support</li>
+      <li>Measure soil temperature and nutrient levels with dedicated sensors</li>
+      <li>Automate watering, fertilization, and pesticide spraying</li>
+      <li>Implemented solo using GNS3 for network simulation</li>
+    </ul>
+
+    <!-- Sample Images -->
+    <h3 style='margin-top:1rem; margin-bottom:0.5rem;'>Sample Images</h3>
+    <div style='display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;'>
+      <img
+        src='./assets/projects/iot-cannabit/picture/2.jpg'
+        alt='Leaf disease detection'
+        style='width:30%; max-width:150px; border-radius:10px;'
+      />
+      <img
+        src='./assets/projects/iot-cannabit/picture/3.jpg'
+        alt='Automated watering and fertilization'
+        style='width:30%; max-width:150px; border-radius:10px;'
+      />
+    </div>
+  `)">
+  View More
+</button>
+
+
+    <!-- Github -->
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/tree-care-system'">Github</button>
+
+    <!-- Live Demo -->
+    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+  </div>
+</div>
+<!-- end Card -->
+
+
+<!-- card 4 -->
+<div class="details-container color-container project-card">
+  <div class="article-container">
+    <img src="./assets/projects/cancer/picture/picture.png " alt="Project 3" 
+      class="project-img" />
+  </div>
+  <!-- name Project -->
+  <h2 class="experence-sub-title project-title">Cancer classification</h2>
+  <p class="project-desc">
+    This project is about analyzing data on characteristics of cancer cell types and performing visualizations.
+  </p>
+  <div class="btn-container">
+    <!-- View More Info ปุ่มแรก -->
+   <div class="btn-container">
+  <button class="btn btn-color-2 project-btn"
+    onclick="openModal('Cancer Classification Project', `
+      <!-- Main image (centered, moderate size) -->
+      <img
+        src='./assets/projects/cancer/picture/main-image.png'
+        alt='Cancer Classification Main'
+        style='display: block; width: 80%; max-width: 500px; margin: 0 auto 1rem; border-radius: 10px;'
+      />
+
+      <!-- Project Overview -->
+      <h3 style='margin-top:0; margin-bottom:0.5rem;'>Project Overview</h3>
+      <p style='margin-bottom:1rem;'>
+        This project predicts cancer cell types using a dataset of cell features.
+        We performed data cleaning and exploratory visualization to uncover
+        distinguishing characteristics among different cell classes. Those insights
+        were then used to train machine learning models, and model performance was
+        evaluated and visualized via a confusion matrix.
+      </p>
+
+      <!-- Visualizations -->
+      <div style='display:flex; flex-wrap:wrap; gap:1rem; margin-bottom:1.5rem;'>
+        <div style='flex:1; min-width:45%;'>
+          <h3 style='margin-bottom:0.5rem;'>Dataset Visualization</h3>
+          <img
+            src='./assets/projects/cancer/picture/dataset.png'
+            alt='Cancer cell dataset visualization'
+            style='width:100%; border-radius:10px;'
+          />
+        </div>
+        <div style='flex:1; min-width:45%;'>
+          <h3 style='margin-bottom:0.5rem;'>SVM Confusion Matrix</h3>
+          <img
+            src='./assets/projects/cancer/picture/confusion-matrix-svm.png'
+            alt='SVM confusion matrix'
+            style='width:100%; border-radius:10px;'
+          />
+        </div>
+      </div>
+    `)">
+    View More
+  </button>
+</div>
+
+
+    <!-- Github -->
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/Cancer-Classification'">Github</button>
+
+    <!-- Live Demo -->
+    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+  </div>
+</div>
+<!-- end Card -->
+
+<!-- card 5 -->
+<div class="details-container color-container project-card">
+  <div class="article-container">
+    <img src="./assets/projects/human-detection/picture/group.jpg " alt="Project 3" 
+      class="project-img" />
+  </div>
+  <!-- name Project -->
+  <h2 class="experence-sub-title project-title">Human detection</h2>
+  <p class="project-desc">
+    The device detects humans using a camera and then uses AI to analyze and send alerts to mobile phones.
+  </p>
+  <div class="btn-container">
+    <!-- View More Info ปุ่มแรก -->
+    <button class="btn btn-color-2 project-btn"
+  onclick="openModal('Human detection', `
+    <img src='./assets/projects/mustode-bcar/picture/picture-real.jpg' alt='Human detection' style='width: 40%; display: block; margin: 0 auto; border-radius: 10px; margin-bottom: 1rem;' />
+
+    <p style='font-weight: 500; text-align: center; margin-bottom: 2rem;'>
+      An app that allows you to rent a vehicle and rent out your own vehicle at the same time. It has user accounts in a database, real-world financial transactions, and uses location.
+    </p>
+  `)">
+  View More 
+</button>
+    <!-- Github -->
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/human-detection'">Github</button>
+
+    <!-- Live Demo -->
+    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+  </div>
+</div>
+<!-- end Card -->
+
+<!-- card 6 -->
+<div class="details-container color-container project-card">
+  <div class="article-container">
+    <img src="./assets/projects/measure-execution-time/picture/picture.png" alt="Project 3" 
+      class="project-img" />
+  </div>
+  <!-- name Project -->
+  <h2 class="experence-sub-title project-title">measure CPU executiontime  </h2>
+  <p class="project-desc">
+    GUI window that tests and measures the performance of your computer and compares it with other computer.
+  </p>
+  <div class="btn-container">
+    <!-- View More Info ปุ่มแรก -->
+    <!-- <button class="btn btn-color-2 project-btn"
+  onclick="openModal('Image Restoration Project', `
+    <img src='./assets/projects/mustode-bcar/picture/picture-real.jpg' alt='Vehicle rental' style='width: 40%; display: block; margin: 0 auto; border-radius: 10px; margin-bottom: 1rem;' />
+
+    <p style='font-weight: 500; text-align: center; margin-bottom: 2rem;'>
+      An app that allows you to rent a vehicle and rent out your own vehicle at the same time. It has user accounts in a database, real-world financial transactions, and uses location.
+    </p>
+  `)">
+  View More 
+</button> -->
+    <!-- Github -->
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/measure_execution_time'">Github</button>
+
+    <!-- Live Demo -->
+    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+  </div>
+</div>
+<!-- end Card -->
+
+
+<!-- card 7 -->
+<div class="details-container color-container project-card">
+  <div class="article-container">
+    <img src="./assets/projects/caculate-geometry&math-practice/picture/picture.png" alt="Project 3" 
+      class="project-img" />
+  </div>
+  <!-- name Project -->
+  <h2 class="experence-sub-title project-title">Calculate geometry & math practice</h2>
+  <p class="project-desc">
+    GUI window calculates the area or volume of geometric shapes and can practice math.
+  </p>
+  <div class="btn-container">
+    <!-- View More Info ปุ่มแรก -->
+    <!-- <button class="btn btn-color-2 project-btn"
+  onclick="openModal('Image Restoration Project', `
+    <img src='./assets/projects/mustode-bcar/picture/picture-real.jpg' alt='Vehicle rental' style='width: 40%; display: block; margin: 0 auto; border-radius: 10px; margin-bottom: 1rem;' />
+
+    <p style='font-weight: 500; text-align: center; margin-bottom: 2rem;'>
+      An app that allows you to rent a vehicle and rent out your own vehicle at the same time. It has user accounts in a database, real-world financial transactions, and uses location.
+    </p>
+  `)">
+  View More 
+</button> -->
+    <!-- Github -->
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/project-calculate-geometry-and-math-'">Github</button>
+
+    <!-- Live Demo -->
+    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
+  </div>
+</div>
+<!-- end Card -->
+
+        
+        
+        
+        
+      </div>
+      </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'">
+    </section>
     <section id="experience">
   <p class="section__text__p1">Explore My</p>
   <h1 class="title">Experience</h1>
@@ -141,16 +518,49 @@ Faculty of Engineering, Kasetsart University Sriracha Campus <br>
           July 2025
         </p>
         <div class="btn-container">
-          <button class="btn btn-color-2 project-btn"
-            onclick="openModal(' DATA CAMP (Data Near You, driving the future with data)', `
-    <img src='./assets/experience/nso-pic1.jpg' alt='Detail image' style='width: 100%; border-radius: 10px; margin-bottom: 1rem;' />
-    To promote knowledge and skills in using statistical data, analyzing data for university students with the aim of effectively bringing the GD Catalog approach to enhance the flavor and skills in using statistical data and data efficiency to understand and easily instill the concept of research (Data-Driven Decision Making), helping to create a strong foundation for youth and university student councils/students, knowledge networks, data organizations and data concepts.
-Open for applications: June 4, 2025 to July 7, 2025
-Training date: July 18-20, 2025 (3 days, 2 days)
-Source: Centara Life Hotel, Staff Center and Convention Center, Chaeng Watthana, Bangkok
-  `)">
-            View More Info
-          </button>
+          <div class="btn-container">
+  <div class="btn-container">
+  <button class="btn btn-color-2 project-btn"
+    onclick="openModal('DATA CAMP (Data Near You, driving the future with data)', `
+      <!-- รูปหลัก เต็มความกว้าง -->
+      <img src='./assets/experience/nso-pic1.jpg'
+           alt='Detail image'
+           style='width: 100%; border-radius: 10px; margin-bottom: 1rem;' />
+
+      <!-- แทรกภาพแสดงการทำงานกลุ่ม (ปรับขนาดเล็กลง) -->
+      <h3 style='margin-top: 1rem;'>Team Collaboration</h3>
+      <img src='./assets/experience/nso-group.jpg'
+           alt='Team Collaboration'
+           style='display: block; width: 50%; max-width: 600px; margin: 0 auto 1rem; border-radius: 10px;' />
+
+      <!-- สรุปโครงการ -->
+      <h3 style='margin-top: 1rem;'>Overview</h3>
+      <p style='margin-bottom: 1rem;'>
+        To promote knowledge and skills in using statistical data among university students,
+        bringing the GD Catalog approach to enhance data fluency and research concepts
+        (Data‑Driven Decision Making), and building a strong foundation for youth,
+        student councils, and data‑centric organizations.
+      </p>
+
+      <!-- ระยะเวลารับสมัคร -->
+      <h3 style='margin-top: 1rem;'>Application Period</h3>
+      <p style='margin: 0.25rem 0 1rem;'><strong>June 4, 2025 – July 7, 2025</strong></p>
+
+      <!-- วันอบรม -->
+      <h3 style='margin-top: 1rem;'>Training Dates</h3>
+      <p style='margin: 0.25rem 0 1rem;'><strong>July 18–20, 2025</strong> (3 days, 2 nights)</p>
+
+      <!-- สถานที่จัดอบรม -->
+      <h3 style='margin-top: 1rem;'>Venue</h3>
+      <p style='margin: 0.25rem 0 1rem;'><strong>Centara Life Hotel, Staff Center and Convention Center, Chaeng Watthana, Bangkok</strong></p>
+    `)">
+    View More Info
+  </button>
+</div>
+
+</div>
+
+
         </div>
       </div>
 
@@ -165,25 +575,64 @@ Source: Centara Life Hotel, Staff Center and Convention Center, Chaeng Watthana,
     May 2025 - June 2025
   </p>
   <div class="btn-container">
-    <button class="btn btn-color-2 project-btn"
-  onclick="openModal('India Internship - Vishwakarma University', `
-    <img src='./assets/experience/india-pic1.jpg' alt='Internship Image' style='width: 100%; border-radius: 10px; margin-bottom: 1rem;' />
-    
-    <p style='font-weight: 500; margin-bottom: 0.5rem;'>
-      Students from the Computer Engineering and Informatics program are undertaking summer internships to gain experience before participating in cooperative education at Vishwakarma University, India
-    </p>
-    
-    <p style='font-weight: 400; margin-bottom: 0.5rem;'>
-      Prof. (Dr.) Siddharth Jabade, President of Vishwakarma University, India, visited 8 students from the Computer Engineering and Informatics program, Faculty of Engineering at Sriracha, who are undertaking summer internships. The purpose of the internship is to gain experience prior to participating in the cooperative education program in the second semester of the academic year 2025 (B.E. 2568), taking place from April 15 to June 15, 2025. The students are supervised by Asst. Prof. Dr. Prawit Chumchu, a lecturer in the Department of Computer Engineering, Faculty of Engineering at Sriracha, and Prof. (Dr.) Kailas Patil, an advisor from Vishwakarma University.
-    </p>
-    
-    <p>
-      <strong>Mr. Napattarapong Chamchoy</strong><br>
-      Project : Development of Image Restoration Tool
-    </p>
-  `)">
-  View More Info
-</button>
+    <div class="btn-container">
+  <div class="btn-container">
+  
+  <button class="btn btn-color-2 project-btn"
+    onclick="openModal('India Internship - Vishwakarma University', `
+      <!-- รูปหลัก เต็มความกว้าง -->
+      <img src='./assets/experience/india-pic1.jpg'
+           alt='Internship Image'
+           style='width: 100%; border-radius: 10px; margin-bottom: 1rem;' />
+
+      <!-- Overview -->
+      <h3 style='margin-top: 1rem;'>Overview</h3>
+      <p style='margin-bottom: 1rem;'>
+        Students from the Computer Engineering and Informatics program undertook
+        a summer internship at Vishwakarma University, India to gain practical
+        experience prior to cooperative education.
+      </p>
+
+      <!-- Program Details -->
+      <h3 style='margin-top: 1rem;'>Program Details</h3>
+      <ul style='margin-bottom: 1rem; padding-left: 1.2rem;'>
+        <li><strong>Location:</strong> Vishwakarma University, India</li>
+        <li><strong>Duration:</strong> April 15 – June 15, 2025</li>
+        <li><strong>Supervisors:</strong> Asst. Prof. Dr. Prawit Chumchu &amp; Prof. (Dr.) Kailas Patil</li>
+      </ul>
+
+      <!-- Visiting Professor -->
+      <h3 style='margin-top: 1rem;'>Visiting Professor</h3>
+      <p style='margin-bottom: 1rem;'>
+        Prof. (Dr.) Siddharth Jabade, President of Vishwakarma University, visited the interns
+        to discuss objectives and provide guidance.
+      </p>
+
+      <!-- Highlights: Presentation & Certificate -->
+      <h3 style='margin-top: 1rem;'>Highlights</h3>
+      <div style='display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;'>
+        <img src='./assets/experience/india-present.jpg'
+             alt='Presenting Project'
+             style='flex: 1; min-width: 45%; max-width: 48%; border-radius: 10px;' />
+        <img src='./assets/experience/india-certificate.jpg'
+             alt='Certificate'
+             style='flex: 1; min-width: 45%; max-width: 48%; border-radius: 10px;' />
+      </div>
+
+      <!-- My Role -->
+      <h3 style='margin-top: 1rem;'>My Role</h3>
+      <p>
+        <strong>Mr. Napattarapong Chamchoy</strong><br>
+        do research and Project: Development of Image Restoration Tool
+      </p>
+    `)">
+    View More Info
+  </button>
+</div>
+
+</div>
+
+
 
   </div>
 </div>
@@ -325,259 +774,6 @@ React, postman</h3>
 
   <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'">
 </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-       
-        
-        <div class="details-container color-container project-card">
-  <div class="article-container">
-    <img src="./assets/projects/image-restoration/profile1.png" alt="Project 3" 
-      class="project-img" />
-  </div>
-  <h2 class="experence-sub-title project-title">Image Restoration tool</h2>
-  <p class="project-desc">
-    A tool for restoring deteriorated images using three appropriate machine learning models.
-  </p>
-  <div class="btn-container">
-    <!-- View More Info ปุ่มแรก -->
-    <button class="btn btn-color-2 project-btn"
-  onclick="openModal('Image Restoration Project', `
-    <img src='./assets/projects/image-restoration/profile1.png' alt='Image Restoration' style='width: 100%; border-radius: 10px; margin-bottom: 1rem;' />
-    
-    <ul style='font-weight: 500; padding-left: 1.2rem; margin-bottom: 1.5rem;'>
-      <li>This research presents a complete image restoration system integrated into a Flask-based web application.</li>
-      <li>The system consists of three main modules:</li>
-      <ul style='padding-left: 1.5rem; margin-top: 0.5rem;'>
-        <li><strong>DEM</strong> (Degradation Evaluation Module): Automatically identifies image degradation types such as blur, noise, and low resolution.</li>
-        <li><strong>ARF</strong> (Adaptive Restoration Filtering): Applies advanced models—DeblurGANv2 for deblurring, FFDNet for denoising, and EDSR for super-resolution.</li>
-        <li><strong>FEM</strong> (Final Enhancement Module): Enhances color accuracy using the DWB model.</li>
-      </ul>
-      <li>Unlike traditional methods that require manual analysis, this system provides an automated and efficient solution.</li>
-      <li>Users can upload images, have them restored automatically, and download the improved results directly through the platform.</li>
-    </ul>
-
-    <h3 style='margin-top: 2rem;'>Diagram</h3>
-    <img src='./assets/projects/image-restoration/picture/diagram.png' alt='System Diagram' style='width: 35%; border-radius: 10px; margin-bottom: 1.5rem;' />
-
-    <h3 style='margin-top: 2rem;'>Results</h3>
-    <img src='./assets/projects/image-restoration/picture/result.jpg' alt='Restoration Result' style='width: 100%; border-radius: 10px;' />
-  `)">
-  View More 
-</button>
-    <!-- Github -->
-    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/image-restoration'">Github</button>
-
-    <!-- Live Demo -->
-    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
-  </div>
-</div>
-
-
-<!-- card 2 -->
-<div class="details-container color-container project-card">
-  <div class="article-container">
-    <img src="./assets/projects/mustode-bcar/picture/profile.png " alt="Project 3" 
-      class="project-img" />
-  </div>
-  <!-- name Project -->
-  <h2 class="experence-sub-title project-title">Application Vehicle rental</h2>
-  <p class="project-desc">
-    An app that allows vehicle rentals uses map data to determine the user's location.
-  </p>
-  <div class="btn-container">
-    <!-- View More Info ปุ่มแรก -->
-    <button class="btn btn-color-2 project-btn"
-  onclick="openModal('Image Restoration Project', `
-    <img src='./assets/projects/mustode-bcar/picture/picture-real.jpg' alt='Vehicle rental' style='width: 40%; display: block; margin: 0 auto; border-radius: 10px; margin-bottom: 1rem;' />
-
-    <p style='font-weight: 500; text-align: center; margin-bottom: 2rem;'>
-      An app that allows you to rent a vehicle and rent out your own vehicle at the same time. It has user accounts in a database, real-world financial transactions, and uses location.
-    </p>
-  `)">
-  View More 
-</button>
-    <!-- Github -->
-    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/Mustode_B_car'">Github</button>
-
-    <!-- Live Demo -->
-    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
-  </div>
-</div>
-<!-- end Card -->
-
-<!-- card 3 -->
-<div class="details-container color-container project-card">
-  <div class="article-container">
-    <img src="./assets/projects/iot-cannabit/picture/picture.jpg " alt="Project 3" 
-      class="project-img" />
-  </div>
-  <!-- name Project -->
-  <h2 class="experence-sub-title project-title">Tree care system</h2>
-  <p class="project-desc">
-   Project about creating an intelligent tree planting and care system
-  </p>
-  <div class="btn-container">
-    <!-- View More Info ปุ่มแรก -->
-    <!-- <button class="btn btn-color-2 project-btn"
-  onclick="openModal('Image Restoration Project', `
-    <img src='./assets/projects/mustode-bcar/picture/picture-real.jpg' alt='Vehicle rental' style='width: 40%; display: block; margin: 0 auto; border-radius: 10px; margin-bottom: 1rem;' />
-
-    <p style='font-weight: 500; text-align: center; margin-bottom: 2rem;'>
-      An app that allows you to rent a vehicle and rent out your own vehicle at the same time. It has user accounts in a database, real-world financial transactions, and uses location.
-    </p>
-  `)">
-  View More 
-</button> -->
-    <!-- Github -->
-    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/tree-care-system'">Github</button>
-
-    <!-- Live Demo -->
-    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
-  </div>
-</div>
-<!-- end Card -->
-
-
-<!-- card 4 -->
-<div class="details-container color-container project-card">
-  <div class="article-container">
-    <img src="./assets/projects/cancer/picture/picture.png " alt="Project 3" 
-      class="project-img" />
-  </div>
-  <!-- name Project -->
-  <h2 class="experence-sub-title project-title">Cancer classification</h2>
-  <p class="project-desc">
-    This project is about analyzing data on characteristics of cancer cell types and performing visualizations.
-  </p>
-  <div class="btn-container">
-    <!-- View More Info ปุ่มแรก -->
-    <!-- <button class="btn btn-color-2 project-btn"
-  onclick="openModal('Image Restoration Project', `
-    <img src='./assets/projects/mustode-bcar/picture/picture-real.jpg' alt='Vehicle rental' style='width: 40%; display: block; margin: 0 auto; border-radius: 10px; margin-bottom: 1rem;' />
-
-    <p style='font-weight: 500; text-align: center; margin-bottom: 2rem;'>
-      An app that allows you to rent a vehicle and rent out your own vehicle at the same time. It has user accounts in a database, real-world financial transactions, and uses location.
-    </p>
-  `)">
-  View More 
-</button> -->
-    <!-- Github -->
-    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/Cancer-Classification'">Github</button>
-
-    <!-- Live Demo -->
-    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
-  </div>
-</div>
-<!-- end Card -->
-
-<!-- card 5 -->
-<div class="details-container color-container project-card">
-  <div class="article-container">
-    <img src="./assets/projects/human-detection/picture/group.jpg " alt="Project 3" 
-      class="project-img" />
-  </div>
-  <!-- name Project -->
-  <h2 class="experence-sub-title project-title">Human detection</h2>
-  <p class="project-desc">
-    The device detects humans using a camera and then uses AI to analyze and send alerts to mobile phones.
-  </p>
-  <div class="btn-container">
-    <!-- View More Info ปุ่มแรก -->
-    <!-- <button class="btn btn-color-2 project-btn"
-  onclick="openModal('Image Restoration Project', `
-    <img src='./assets/projects/mustode-bcar/picture/picture-real.jpg' alt='Vehicle rental' style='width: 40%; display: block; margin: 0 auto; border-radius: 10px; margin-bottom: 1rem;' />
-
-    <p style='font-weight: 500; text-align: center; margin-bottom: 2rem;'>
-      An app that allows you to rent a vehicle and rent out your own vehicle at the same time. It has user accounts in a database, real-world financial transactions, and uses location.
-    </p>
-  `)">
-  View More 
-</button> -->
-    <!-- Github -->
-    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/human-detection'">Github</button>
-
-    <!-- Live Demo -->
-    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
-  </div>
-</div>
-<!-- end Card -->
-
-<!-- card 6 -->
-<div class="details-container color-container project-card">
-  <div class="article-container">
-    <img src="./assets/projects/measure-execution-time/picture/picture.png" alt="Project 3" 
-      class="project-img" />
-  </div>
-  <!-- name Project -->
-  <h2 class="experence-sub-title project-title">measure CPU executiontime  </h2>
-  <p class="project-desc">
-    GUI window that tests and measures the performance of your computer and compares it with other computer.
-  </p>
-  <div class="btn-container">
-    <!-- View More Info ปุ่มแรก -->
-    <!-- <button class="btn btn-color-2 project-btn"
-  onclick="openModal('Image Restoration Project', `
-    <img src='./assets/projects/mustode-bcar/picture/picture-real.jpg' alt='Vehicle rental' style='width: 40%; display: block; margin: 0 auto; border-radius: 10px; margin-bottom: 1rem;' />
-
-    <p style='font-weight: 500; text-align: center; margin-bottom: 2rem;'>
-      An app that allows you to rent a vehicle and rent out your own vehicle at the same time. It has user accounts in a database, real-world financial transactions, and uses location.
-    </p>
-  `)">
-  View More 
-</button> -->
-    <!-- Github -->
-    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/measure_execution_time'">Github</button>
-
-    <!-- Live Demo -->
-    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
-  </div>
-</div>
-<!-- end Card -->
-
-
-<!-- card 7 -->
-<div class="details-container color-container project-card">
-  <div class="article-container">
-    <img src="./assets/projects/caculate-geometry&math-practice/picture/picture.png" alt="Project 3" 
-      class="project-img" />
-  </div>
-  <!-- name Project -->
-  <h2 class="experence-sub-title project-title">Calculate geometry & math practice</h2>
-  <p class="project-desc">
-    GUI window calculates the area or volume of geometric shapes and can practice math.
-  </p>
-  <div class="btn-container">
-    <!-- View More Info ปุ่มแรก -->
-    <!-- <button class="btn btn-color-2 project-btn"
-  onclick="openModal('Image Restoration Project', `
-    <img src='./assets/projects/mustode-bcar/picture/picture-real.jpg' alt='Vehicle rental' style='width: 40%; display: block; margin: 0 auto; border-radius: 10px; margin-bottom: 1rem;' />
-
-    <p style='font-weight: 500; text-align: center; margin-bottom: 2rem;'>
-      An app that allows you to rent a vehicle and rent out your own vehicle at the same time. It has user accounts in a database, real-world financial transactions, and uses location.
-    </p>
-  `)">
-  View More 
-</button> -->
-    <!-- Github -->
-    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Napatpongc/project-calculate-geometry-and-math-'">Github</button>
-
-    <!-- Live Demo -->
-    <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button> -->
-  </div>
-</div>
-<!-- end Card -->
-
-        
-        
-        
-        
-      </div>
-      </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'">
-    </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
